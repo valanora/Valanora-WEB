@@ -123,6 +123,8 @@ nav a:hover {
     font-size: 20px;
     line-height: 1.8;
     color: #5f564f;
+    position: relative;
+    top: -20px;
 }
 
 .hero-image {
@@ -573,8 +575,9 @@ nav a {
 
 .hero {
     display: block !important;
+    min-height: auto !important;
     width: 100%;
-    padding: 25px 5% 5px;
+    padding: 25px 3% 5px;
     box-sizing: border-box;
     text-align: left;
 }
@@ -592,26 +595,27 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.2;
-    white-space: nowrap;
     margin: 0;
 }
 
 .hero-main {
     display: grid !important;
-    grid-template-columns: 1fr 120px;
+    grid-template-columns: minmax(0, 1fr) 120px;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
-    margin: 0;
+    margin-left: 0;
 }
 
 .hero-text {
     width: 100%;
     margin: 0;
-    font-size: 12px;
+    font-size: 3px;
     line-height: 1.6;
+    position: static !important;
+    top: auto !important;
 }
 
 .hero-image {
@@ -896,6 +900,12 @@ nav a {
 .hero + section {
     margin-top: 0 !important;
     padding-top: 5px !important;
+}
+
+.hero {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 20px !important;
 }
 
 /* =========================
