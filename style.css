@@ -149,7 +149,8 @@ nav a:hover {
 .hero-buttons {
     display: flex;
     gap: 15px;
-    margin-top: 35px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .primary-btn,
