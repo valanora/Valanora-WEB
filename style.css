@@ -1943,3 +1943,53 @@ nav a {
     }
 
 }
+
+
+.announcement-bar {
+    width: 100%;
+    overflow: hidden;
+  background-color: #2b211c;
+color: #ffffff;
+    padding: 10px 0;
+}
+
+.announcement-track {
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    animation: announcement-scroll 20s linear infinite;
+}
+
+.announcement-track span {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+@keyframes announcement-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ANNOUNCEMENT MOBILE */
+
+@media (max-width: 768px) {
+    .announcement-bar {
+    padding: 8px 0;
+}
+
+.announcement-track {
+    gap: 25px;
+}
+
+.announcement-track span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+}
